@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Upload Image for Weapon Detection</h2>
+<form action="/detect" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept="image/*" required><br><br>
+    <button type="submit">Detect Weapon</button>
+</form>
+{% endblock %}

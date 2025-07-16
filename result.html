@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Original Image</h2>
+<img src="{{ input_path }}" alt="Input Image">
+
+<h2>Detected Image</h2>
+<img src="{{ output_path }}" alt="Detected Output">
+
+<a href="/upload">Try Another Image</a>
+{% endblock %}

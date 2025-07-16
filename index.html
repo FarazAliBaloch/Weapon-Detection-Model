@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="mb-4 text-primary">Weapon Detection Using YOLOv8</h1>
+<p>This AI-powered web app detects weapons in images, video, and webcam feeds using a custom-trained YOLOv8 model. It helps in enhancing public safety by identifying potentially harmful objects in real-time.</p>
+
+<h3 class="mt-5">How It Works</h3>
+<ul>
+  <li><strong>YOLOv11:</strong> You Only Look Once (v8) is a real-time object detection algorithm that predicts bounding boxes and class probabilities in one evaluation.</li>
+  <li><strong>Custom Model:</strong> Our team trained YOLOv11 on a specialized dataset of weapon images for precise detection.</li>
+</ul>
+
+
+
+<a href="{{ url_for('upload_page') }}" class="btn btn-primary">Try Image Detection</a>
+{% endblock %}
